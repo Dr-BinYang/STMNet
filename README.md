@@ -3,6 +3,45 @@ STMNet for time series forecasting
 
 ## 📁 Project Overview
 
+STMNet/ # 🏠 Root Directory
+
+├── 📁 checkpoints/ # 💾 Model Checkpoints Directory
+
+│ └── (Saved model weights and training checkpoints)
+
+├── 📁 data_provider/ # 🗂️ Data Loading Modules
+│ ├── 🐍 data_factory.py # Data factory for dataset creation
+│ ├── 🐍 data_loader.py # Data loader with batching
+│ └── 🐍 uea.py # UEA dataset handler
+├── 📁 dataset/ # 📊 Dataset Storage
+│ └── (Raw and processed data files)
+├── 📁 exp/ # 🔬 Experiment Configuration
+│ ├── 🐍 exp_basic.py # Base experiment class
+│ └── 🐍 exp_long_term_forecasting.py # Long-term forecasting experiments
+├── 📁 model/ # 🧠 Core Model Architecture
+│ ├── 🐍 init.py # Package initialization
+│ ├── 🐍 attention.py # Attention mechanisms
+│ ├── 🐍 decoder.py # Decoder module
+│ ├── 🐍 embed.py # Embedding layers
+│ ├── 🐍 encoder.py # Encoder module
+│ ├── 🐍 MTM.py # Multi-scale Temporal Memory
+│ ├── 🐍 series_decomp.py # Series decomposition
+│ ├── 🐍 STFus.py # Spatio-Temporal Fusion
+│ └── 🐍 STMNet.py # 🌟 Main model definition
+├── 📁 utils/ # 🛠️ Utility Functions
+│ ├── 🐍 init.py # Package initialization
+│ ├── 🐍 data_analysis.py # Data analysis tools
+│ ├── 🐍 masking.py # Masking utilities
+│ ├── 🐍 metrics.py # 📈 Evaluation metrics
+│ ├── 🐍 plot_results.py # 📊 Visualization tools
+│ ├── 🐍 save_loss_data.py # Loss data serialization
+│ ├── 🐍 timefeatures.py # ⏰ Time feature extraction
+│ └── 🐍 tools.py # General utilities
+├── 📄 requirements.txt # 📋 Python dependencies
+└── 📄 run.py # 🚀 Main execution script
+
+
+
 
 
 
@@ -16,17 +55,6 @@ STMNet for time series forecasting
 4. **Monitor Results**: Check `checkpoints/` for models, `results/` for visualizations
 
 
-## 🎯 Core Module Descriptions
-
-### 🗂️ Data Processing (`data_provider/`)
-- **`data_factory.py`** - Factory pattern for dataset creation
-- **`data_loader.py`** - PyTorch DataLoader implementations
-
-
-### 🛠️ Utility Library (`utils/`)
-- **`metrics.py`** - Evaluation metrics (MSE, MAE, RMSE, MAPE, etc.)
-- **`plot_results.py`** - Visualization tools for training curves and predictions
-- **`timefeatures.py`** - Temporal feature encoding (hour, weekday, month, etc.)
 
 
 ## 📊 Supported Features
