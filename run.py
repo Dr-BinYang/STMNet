@@ -10,6 +10,7 @@ parser = argparse.ArgumentParser(description='STMNet')
 # Data loader configuration
 parser.add_argument('--data', type=str, default='weather', help='dataset type')
 parser.add_argument('--root_path', type=str, default='./dataset/weather/', help='root path of the data file')
+#dataset ddownload: https://figshare.com/s/d120b501a2143eee3cb8
 parser.add_argument('--data_path', type=str, default='weather.csv', help='data file')
 parser.add_argument('--freq', type=str, default='10min',
                     help='frequency for time features encoding, options:[s:secondly, t:minutely, h:hourly, d:daily, b:business days, w:weekly, m:monthly], you can also use more detailed freq like 15min or 3h')
@@ -101,4 +102,5 @@ if __name__ == '__main__':
 
     # Start training
     print('>>>>>>>start training : {}>>>>>>>>>>>>>>>>>>>>>>>>>>'.format(setting))
+
     exp.train()
