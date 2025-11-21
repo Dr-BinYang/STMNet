@@ -15,7 +15,7 @@ STMNet/ # 🏠 Root Directory
 
 │ ├── 🐍 data_loader.py # Data loader with batching
 
-│ └── 🐍 uea.py # UEA dataset handler
+│ └── 🐍 uea.py 
 
 ├── 📁 dataset/ # 📊 Dataset Storage
 
@@ -29,7 +29,7 @@ STMNet/ # 🏠 Root Directory
 
 ├── 📁 model/ # 🧠 Core Model Architecture
 
-│ ├── 🐍 init.py # Package initialization
+│ ├── 🐍 init.py 
 
 │ ├── 🐍 attention.py # Attention mechanisms
 
@@ -39,17 +39,17 @@ STMNet/ # 🏠 Root Directory
 
 │ ├── 🐍 encoder.py # Encoder module
 
-│ ├── 🐍 MTM.py # Multi-scale Temporal Memory
+│ ├── 🐍 MTM.py 
 
 │ ├── 🐍 series_decomp.py # Series decomposition
 
-│ ├── 🐍 STFus.py # Spatio-Temporal Fusion
+│ ├── 🐍 STFus.py 
 
 │ └── 🐍 STMNet.py # 🌟 Main model definition
 
 ├── 📁 utils/ # 🛠️ Utility Functions
 
-│ ├── 🐍 init.py # Package initialization
+│ ├── 🐍 init.py 
 
 │ ├── 🐍 data_analysis.py # Data analysis tools
 
