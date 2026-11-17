@@ -90,21 +90,4 @@ The Solar-Energy script downloads the compressed `solar_AL.txt.gz` file from the
 
 - [Multivariate Time-Series Dataset repository](https://github.com/laiguokun/multivariate-time-series-data)
 
-## File Validation
 
-The scripts perform basic checks after downloading:
-
-- Confirm that the downloaded file is non-empty.
-- Check the expected CSV header/column count for CSV datasets.
-- Check the Solar-Energy gzip archive before extraction and verify its configured MD5 checksum.
-- Verify SHA-256 checksums for Electricity and Traffic.
-- Move the temporary download into its final filename only after validation succeeds.
-
-For datasets without a configured checksum, the script performs structural validation but cannot provide cryptographic verification of the downloaded content.
-
-## Notes
-
-- Each dataset has its own script, so datasets can be downloaded independently.
-- `download_all.sh` is a convenience script that invokes the nine individual scripts one by one.
-- The scripts save files under this `dataset/` directory; they do not modify STMNet model code or data-loading configuration.
-- If you use a different dataset location or filename, update the corresponding data path in the STMNet experiment configuration.
