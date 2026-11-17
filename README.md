@@ -30,19 +30,6 @@ STMNet integrates multi-scale temporal modeling, spatio-temporal feature fusion,
 The framework combines series decomposition with complementary feature extraction mechanisms to model temporal variations, feature-level spatial dependencies, and global representations.
 
 
-## Architecture
-
-The overall STMNet framework consists of the following stages:
-
-1. **Series Decomposition:** Separates the input sequence into seasonal and trend components using moving-average decomposition.
-
-2. **Multi-scale Temporal Modeling:** The MTM module extracts and hierarchically fuses multi-scale temporal representations.
-
-3. **Spatio-Temporal Feature Fusion:** The STFus module captures spatial dependencies, temporal dynamics, and global information through complementary feature extraction branches.
-
-4. **Sequence Encoding and Decoding:** The encoder learns contextual representations, while the decoder generates seasonal and trend predictions.
-
-5. **Forecast Generation:** Combines the predicted seasonal and trend components to obtain the final forecasting output.
 
 ## Repository Structure
 
@@ -138,14 +125,6 @@ python run.py \
     --learning_rate 0.0001
 ```
 
-### Module Configuration
 
-The following parameters control the main architectural components:
-
-- `MTM`: Enables or disables Multi-scale Temporal Memory.
-- `MTM_factor`: Controls the number of temporal decomposition scales.
-- `STFus`: Enables or disables Spatio-Temporal Fusion.
-- `STFusTempor`: Selects the temporal modeling strategy. Supported options are `Attention` and `GRU`.
-- `moving_avg`: Specifies the window size used for moving-average decomposition.
 
 
