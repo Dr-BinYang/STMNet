@@ -4,6 +4,25 @@
 
 This repository provides the PyTorch implementation of STMNet, a deep learning framework for multivariate time-series forecasting.
 
+## Dataset Preparation
+
+Download the datasets from the following link:
+
+[Dataset Download](https://figshare.com/s/d120b501a2143eee3cb8)
+
+After downloading, place the dataset files in the `dataset/` directory.
+
+The default configuration uses the Weather dataset:
+
+```text
+dataset/
+└── weather/
+    └── weather.csv
+```
+
+If you use a different dataset, update the corresponding dataset configuration in `run.py` or specify the appropriate command-line arguments.
+
+
 ## Overview
 
 STMNet integrates multi-scale temporal modeling, spatio-temporal feature fusion, and an encoder–decoder architecture to capture complex patterns in time-series data.
@@ -98,24 +117,6 @@ The provided dependency configuration includes:
 - PyTorch Geometric 2.6.1
 
 Make sure that the installed PyTorch, CUDA, and PyTorch Geometric packages are compatible with your environment. In particular, the PyTorch Geometric extension packages require matching precompiled wheels.
-
-## Dataset Preparation
-
-Download the datasets from the following link:
-
-[Dataset Download](https://figshare.com/s/d120b501a2143eee3cb8)
-
-After downloading, place the dataset files in the `dataset/` directory.
-
-The default configuration uses the Weather dataset:
-
-```text
-dataset/
-└── weather/
-    └── weather.csv
-```
-
-If you use a different dataset, update the corresponding dataset configuration in `run.py` or specify the appropriate command-line arguments.
 
 ## Running Experiments
 
