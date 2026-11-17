@@ -12,7 +12,7 @@ This directory contains independent download scripts for the nine datasets used 
 - Electricity
 - Traffic
 
-The scripts download the datasets from their public source repositories. They do **not** download the Figshare archive.
+The scripts download the datasets from their public source repositories. 
 
 ## Requirements
 
