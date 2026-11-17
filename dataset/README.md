@@ -14,15 +14,6 @@ This directory contains independent download scripts for the nine datasets used 
 
 The scripts download the datasets from their public source repositories. 
 
-## Requirements
-
-- Bash
-- `curl` or `wget`
-- `gzip` for the Solar-Energy archive
-- `sha256sum` or `shasum` for SHA-256 verification where a checksum is configured
-- `md5sum` or `md5` for Solar-Energy archive verification
-
-On Windows, run these scripts using WSL, Git Bash, or another Bash-compatible environment.
 
 ## Download a Single Dataset
 
