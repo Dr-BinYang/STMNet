@@ -155,21 +155,4 @@ The following parameters control the main architectural components:
 - `STFusTempor`: Selects the temporal modeling strategy. Supported options are `Attention` and `GRU`.
 - `moving_avg`: Specifies the window size used for moving-average decomposition.
 
-### Training and Visualization
 
-The following options are also available:
-
-| Parameter | Description |
-|---|---|
-| `use_gpu` | Enables GPU acceleration when available |
-| `checkpoints` | Specifies the model checkpoint directory |
-| `plot_result` | Enables prediction visualization |
-| `plot_hierarchy_prediction` | Enables hierarchical prediction visualization |
-| `plot_attn_weights` | Enables attention weight visualization |
-| `plot_loss_curve` | Enables training loss curve visualization |
-
-
-
-## Acknowledgements
-
-We acknowledge the open-source research community and the developers of the libraries and tools used in this project.
