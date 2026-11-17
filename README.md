@@ -29,13 +29,6 @@ STMNet integrates multi-scale temporal modeling, spatio-temporal feature fusion,
 
 The framework combines series decomposition with complementary feature extraction mechanisms to model temporal variations, feature-level spatial dependencies, and global representations.
 
-### Key Components
-
-- **Multi-scale Temporal Memory (MTM):** Decomposes time-series representations into multi-scale trend and periodic components, followed by hierarchical feature fusion to capture temporal patterns at different scales.
-
-- **Spatio-Temporal Fusion (STFus):** Integrates spatial, temporal, and global representations through three complementary branches. The spatial branch employs dynamically generated graph structures and graph attention, while the temporal branch supports both GRU and multi-head attention mechanisms. Channel attention is used to adaptively fuse the extracted features.
-
-- **Encoder–Decoder Architecture:** Extracts contextual representations through stacked encoder layers and reconstructs seasonal and trend components in the decoder to generate the final forecasting results.
 
 ## Architecture
 
